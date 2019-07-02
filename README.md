@@ -1,3 +1,3 @@
 # ServiceMastersCommons
 
-A description of this package.
+Common models between backend and clients.

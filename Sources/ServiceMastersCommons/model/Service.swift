@@ -1,4 +1,8 @@
-public struct Service: Codable {
+import CouchDB
+
+public struct Service: Codable, Document {
+    public var _id: String?
+    public var _rev: String?
     public let name: String
     public let number: String
 
