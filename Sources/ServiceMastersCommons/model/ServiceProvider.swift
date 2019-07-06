@@ -11,18 +11,16 @@ public struct ServiceProvider: Document {
     public let name: String
     public let phoneNumber: String
     public let bio: String
-    public let location: Location
     public var department: Department?
     public var reviews: [Review]
     public var overview: String
     public var Services: [Service]
     public var address: Location
 
-    public init( name: String, phoneNumber: String, bio: String, location: Location, department: Department?, reviews: [Review], overview: String, Services: [Service], address: Location) {
+    public init( name: String, phoneNumber: String, bio: String, department: Department?, reviews: [Review], overview: String, Services: [Service], address: Location) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.bio = bio
-        self.location = location
         self.department = department
         self.reviews = reviews
         self.overview = overview
