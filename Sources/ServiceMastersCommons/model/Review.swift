@@ -13,7 +13,7 @@ public struct Review: Document {
     public let rank: String
     public let date: Date
 
-    public init( description: Department?, rank: String, date: Date) {
+    public init( description: String, rank: String, date: Date) {
         self.description = description
         self.rank = rank
         self.date = date
