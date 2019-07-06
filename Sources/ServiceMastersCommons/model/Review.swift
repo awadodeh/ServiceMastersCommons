@@ -9,7 +9,7 @@ public struct Review: Document {
 
     public var _id: String?
     public var _rev: String?
-    public var description: Department?
+    public var description: String
     public let rank: String
     public let date: Date
 
