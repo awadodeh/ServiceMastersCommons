@@ -13,14 +13,12 @@ public struct ServiceProvider: Document {
     public let bio: String
     public let location: Location
     public var department: Department?
-    public var reviews: Set<Reviews>
+    public var reviews: [Review]
     public var overview: String
-    public var Services: Set<Service>
+    public var Services: [Service]
     public var address: Location
 
-    public init(_id: String?, _rev: String?, name: String, phoneNumber: String, bio: String, location: Location, department: Department?, reviews: Set<Reviews>, overview: String, Services: Set<Service>, address: Location) {
-        self._id = _id
-        self._rev = _rev
+    public init( name: String, phoneNumber: String, bio: String, location: Location, department: Department?, reviews: [Review], overview: String, Services: [Service], address: Location) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.bio = bio

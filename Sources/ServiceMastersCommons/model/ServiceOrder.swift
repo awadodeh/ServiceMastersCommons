@@ -1,10 +1,10 @@
 //
 // Created by Awad Owda on 2019-07-05.
 //
-
+import Foundation
 import CouchDB
 
-public struct ServiceProvider: Document, CustomStringConvertible {
+public struct ServiceOrder: Document, CustomStringConvertible {
 
     public var _id: String?
     public var _rev: String?
