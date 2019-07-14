@@ -25,10 +25,16 @@ public struct User: Document {
         self.address = address
     }
 
-    public static func == (lhs: User, rhs: User) -> Bool {
-        if lhs._id == rhs._id {
+    public static func ==(lhs: User, rhs: User) -> Bool {
+        if lhs._id == rhs._id || lhs.userId == rhs.userId {
             return true
         }
         return false
+    }
+}
+
+extension User: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(userId)
     }
 }
