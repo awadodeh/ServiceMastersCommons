@@ -26,7 +26,7 @@ public struct User: Document {
     }
 
     public static func ==(lhs: User, rhs: User) -> Bool {
-        if lhs._id == rhs._id || lhs.userId == rhs.userId {
+        if lhs._id == rhs._id && lhs._rev == rhs._rev && lhs.userId == rhs.userId {
             return true
         }
         return false
