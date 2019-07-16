@@ -39,7 +39,7 @@ public struct ServiceProvider: Document {
     }
 }
 
-extension User: Hashable {
+extension ServiceProvider: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(serviceProviderId)
     }
